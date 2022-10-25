@@ -1,4 +1,9 @@
-
+html {
+    --primary-color:#395B64; 
+    --secondary-color: #A5C9CA;
+    --third-color: #2C3333;
+    --forth-color: #E7F6F2;
+}
 
 
 

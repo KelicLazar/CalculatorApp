@@ -15,10 +15,16 @@ const calcSlice = createSlice({
       if (state.firstNumber === "0" && action.payload.number === "0") {
         return;
       }
+      if (state.firstNumber.length > 12) {
+        return;
+      }
       state.firstNumber = state.firstNumber + action.payload.number;
     },
     updateSecondNum(state, action) {
       if (state.secondNumber === "0" && action.payload.number === "0") {
+        return;
+      }
+      if (state.secondNumber.length > 12) {
         return;
       }
       state.secondNumber = state.secondNumber + action.payload.number;
